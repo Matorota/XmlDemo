@@ -19,8 +19,10 @@ namespace XmlDemo
             vardas.InnerText = "Jonas";
             asmuo.AppendChild(vardas);
 
-
-
+            var pavarde = asmuoDocument.CreateElement("Pavarde");
+            pavarde.InnerText = "P3";
+            asmuo.AppendChild(pavarde);
+            asmuo.SetAttribute("Amzius", "12");
 
             Console.WriteLine(asmuoDocument.OuterXml);
             Console.ReadLine();
